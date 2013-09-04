@@ -1,0 +1,105 @@
+Console Run 
+
+"string = broken"
+
+"number = 3"
+
+"boolean = true"
+
+"undefined = undefined"
+
+"opaque is not a number. true"
+
+"50 panes is not a number. true"
+
+"200 is not a number. false"
+
+" 250 is not a number. false"
+
+"true is not a number. false"
+
+"These  words are separated by  tabs"
+
+"These/tare/tnot/tusing/tthe/tbackslash"
+
+"Your mirror order is $265 or $265. The first was displayed letting JavaScript convert it to a string and the second used the toString method."
+
+"Cost in base 10 and base 16 for the mainframers. 260 104"
+
+30
+
+"Before the variable is 10 and after the variable is 9."
+
+"Using 13 ft. of glass at 2 ft. per shelf, we have 1 ft. left over."
+
+"Get at least 3 quotes for the broken glass."
+
+"I see myself."
+
+"I see myself."
+
+"No vampire present."
+
+"Put this one in the showroom."
+
+"large mirror"
+
+"large mirror with beveled edge"
+
+256
+
+"cost + waste = 770.0000000000001"
+
+"Inventory will always reduce at least once."
+
+"The inventory loop does not have to execute with the while loop."
+
+"Inventory started at 67 with 5 purchases ending with an inventory of 62."
+
+true
+
+false
+
+false
+
+true
+
+false
+
+false
+
+true
+
+"expensive cut"
+
+"tough piece to break"
+
+"glass is transparent"
+
+"the area of the glass is 12"
+
+"the area returned from the function is 15"
+
+"thanks for sending nothing or more than I wanted"
+
+"thanks for passing just this one field uncut glass"
+
+"thanks for sending nothing or more than I wanted"
+
+1
+
+NaN
+
+NaN
+
+45
+
+1
+
+NaN
+
+NaN
+
+45.99
+
+"You have selected the 4 X 6 two-way mirror with a price of $89.99"

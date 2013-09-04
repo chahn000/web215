@@ -1,0 +1,298 @@
+// expression 1 - data types
+var glass1 = "broken";
+console.log (typeof (glass1) + " = " + glass1);
+
+// expression 2 - data types
+var glass2 = 3;
+console.log (typeof (glass2) + " = " + glass2);
+
+// expression 3 - data types
+var glass3 = true;
+console.log (typeof (glass3) + " = " + glass3);
+
+// expression 4 - data types
+var glass4;
+console.log (typeof (glass4) + " = " + glass4);
+
+// expression 5 - NaN
+var glass5 = "opaque";
+console.log (glass5 + " is not a number. " + isNaN(glass5));
+
+// expression 6 - NaN
+var glass6 = "50 panes";
+console.log (glass6 + " is not a number. " + isNaN(glass6));
+
+// expression 7 - NaN
+var glass7 = "200";
+console.log (glass7 + " is not a number. " + isNaN(glass7));
+
+// expression 8 - NaN
+var glass8 = " 250";
+console.log (glass8 + " is not a number. " + isNaN(glass8));
+
+// expression 9 - NaN
+var glass9 = true;
+console.log (glass9 + " is not a number. " + isNaN(glass9));
+
+// expression 10 - string character literals
+console.log("These\twords\tare\tseparated\tby\ttabs");
+
+// expression 11 - badly formed character literals
+console.log("These/tare/tnot/tusing/tthe/tbackslash");
+
+// expression 12 - string conversion
+var cost = 265;
+console.log ("Your mirror order is $" + cost + " or $" + cost.toString() + ". The first was displayed letting JavaScript convert it to a string and the second used the toString method.");
+
+// expression 13 - string conversion
+var cost = 260;
+console.log("Cost in base 10 and base 16 for the mainframers. " + cost.toString(10) + " " + cost.toString(16));  
+
+// expression 14 - fun with unary operators
+var x = 4;
+x = (x + ++x - (-1)) * -(-3);
+console.log (x);
+
+// expression 15 and 16 - increment before and after the variable
+var x = 4;
+var y = ++x + 5;
+x = 4;
+var z = x++ + 5;
+console.log ("Before the variable is " + y + " and after the variable is " + z + ".");
+
+// expression 17 - modulus
+var glass = 13.0;
+var length = 2.0;
+var scrap;
+scrap = glass % length;
+console.log("Using " + glass + " ft. of glass at " + length + " ft. per shelf, we have " + scrap + " ft. left over.");
+
+// expression 18 - compound operator
+var glass = "broken";
+var cost = 200;
+if (glass === "broken" && cost < 200){
+  console.log("Fix it.");
+}
+else{
+  console.log("Get at least 3 quotes for the broken glass.");
+}
+
+// expression 19 - simple IF
+var mirror = "reflects";
+if (mirror === "reflects"){
+  console.log("I see myself.");
+}
+
+// expression 20 - simple IF ELSE
+var mirror = "reflects";
+if (mirror === "reflects"){
+  console.log("I see myself.");
+} 
+else{
+  console.log("This mirror is apparently a window.");
+}
+ 
+// expression 21 - IF with block of code
+var mirror = "reflects";
+if (mirror === "reflects"){
+  console.log("No vampire present.");
+  console.log("Put this one in the showroom.");
+}  
+
+// expression 22 - IF ELSE-IF ELSE
+var mirror = 5;
+if (mirror < 3){
+  console.log("small mirror");
+}
+else if (mirror < 5){
+  console.log("medium mirror");
+}
+else{
+  console.log("large mirror");
+}  
+  
+// expression 23 - nested IF
+var mirror = 5;
+var edge = "beveled";
+if (mirror > 3){
+  if (edge = "beveled"){
+    console.log("large mirror with beveled edge");
+  }
+}
+
+// expression 24 - compound operator statement
+var costincrease = 6;
+var mirrorcost = 250;
+console.log(mirrorcost += costincrease);
+
+// expression 25 - compound operator statement
+var wastefactor = 1.1;
+var projectcost = 700;
+console.log("cost + waste = " + (projectcost *= wastefactor));
+
+// expression 26 - do statement
+var inventory = 5;
+do{
+  inventory--;
+  console.log("Inventory will always reduce at least once.");
+} while (inventory === 5);
+
+// expression 27 - while statement
+var inventory = 5;
+while (inventory > 5){
+  console.log("Inventory loop executed.");
+}
+console.log("The inventory loop does not have to execute with the while loop.");
+
+// expression 28 - for statement
+var purchases = 5;
+var originalinventory = 67;
+var currentinventory = originalinventory;
+for (var sales = 0; sales < purchases; sales++){
+  if (currentinventory > 0){
+    currentinventory -= 1;
+  }
+} 
+console.log("Inventory started at " + originalinventory + " with " + purchases + " purchases ending with an inventory of " + currentinventory + ".");
+
+// expression 29 - logical not
+var trim = false;
+console.log(!trim);
+
+// expression 30 - logical not
+var trim = "bull-nosed";
+console.log(!trim);
+
+// expression 31 - logical not
+var trim; 
+console.log(!trim);
+
+// expression 32 - equal versus identically equal
+var trim = "56";
+var edging = 56;
+console.log(trim == edging);
+
+// expression 33 - equal versus identically equal
+var trim = "56";
+var edging = 56;
+console.log(trim === edging);
+
+// expression 34 - equal versus identically equal
+var trim = "56";
+var edging = 56;
+console.log(trim != edging);
+
+// expression 35 - equal versus identically equal
+var trim = "56";
+var edging = 56;
+console.log(trim !== edging);
+
+// expression 36 - switch basic
+var bevel = 3;
+switch (bevel){
+	case 1:
+		console.log("inexpensive cut");
+		break;
+	case 2: 
+		console.log("medium-priced cut");
+		break;
+	case 3:
+		console.log("expensive cut");
+		break;
+	default:
+		console.log("cannot determine cut pricing");
+}
+
+// expression 37 - switch fall through
+var thickness = 4;
+switch (thickness){
+	case 1:
+	case 2:
+		console.log("fragile piece detected");
+		break;
+	case 3:
+	case 4:
+	case 5:
+		console.log("tough piece to break");
+		break;
+}
+
+// expression 38 - basic function no parameters
+function glass38(){
+	console.log("glass is transparent");
+}
+glass38();
+
+// expression 39 - basic function with parameters and no return value
+function glass39(length, width){
+	console.log("the area of the glass is " + (length * width));
+}
+glass39(3, 4);
+	
+// expression 40 - basic function with parameters and returns value
+function glass40(length, width){
+	return (length * width);
+}
+console.log("the area returned from the function is " + glass40(3, 5));
+
+// expression 41 - basic function no parameters but use arguments to detect a parameter
+function glass41(){
+	if(arguments.length === 1){
+		console.log("thanks for passing just this one field " + arguments[0]);
+	}
+	else{
+		console.log("thanks for sending nothing or more than I wanted");
+	}
+}
+glass41();
+glass41("uncut glass");
+glass41("$450","$975");
+
+// expression 42 - fun with parseInt
+console.log(parseInt("1g2l3a4s5s"));
+
+// expression 43 - fun with parseInt
+console.log(parseInt("$75.99"));
+
+// expression 44 - fun with parseInt
+console.log(parseInt("Your order will be ready on 7/8/2013."));
+
+// expression 45 - fun with parseInt
+console.log(parseInt(45.99));
+
+// expression 46 - fun with parseFloat
+console.log(parseFloat("1g2l3a4s5s"));
+
+// expression 47 - fun with parseFloat
+console.log(parseFloat("$75.99"));
+
+// expression 48 - fun with parseFloat
+console.log(parseFloat("Your order will be ready on 7/8/2013."));
+
+// expression 49 - fun with parseFloat
+console.log(parseFloat(45.99));
+
+// expression 50 - I'm exhausted
+var model = "two-way mirror";
+var size = "4 X 6";
+var cost = 89.99;
+console.log("You have selected the " + size + " " + model + " with a price of $" + cost);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
